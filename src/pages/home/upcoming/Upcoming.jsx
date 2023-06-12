@@ -5,11 +5,13 @@ import useFetch from "../../../hooks/useFetch";
 import Carousel from "../../../components/carousel/Carousel";
 
 const Upcoming = () => {
-	const [endpoint, setEndpoint] = useState("movie/upcoming");
+	const [endpoint, setEndpoint] = useState("movie");
+	const [endpoint2, setEndpoint2] = useState("upcoming");
 
-	const { data, loading } = useFetch(`/${endpoint}`);
+	const { data, loading } = useFetch(`/${endpoint}/${endpoint2}`);
 	const onTabChange = (tab) => {
-		setEndpoint(tab === "Movies" ? "movie/upcoming" : "tv/on_the_air");
+		setEndpoint(tab === "Movies" ? "movie" : "tv");
+		setEndpoint2(tab === "Movies" ? "upcoming" : "on_the_air");
 	};
 	return (
 		<div className='carouselSection'>
