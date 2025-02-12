@@ -12,7 +12,9 @@ const Footer = () => {
 				<ul className='menuItems'>
 					<li className='menuItem'>Terms Of Use</li>
 					<li className='menuItem'>Privacy-Policy</li>
-					<li className='menuItem'>Created By@Chandan</li>
+					<a
+					href='https://genbridgelabs.in' target='_blank'>
+					<li className='menuItem'>Created By@GenBridge Labs</li></a>
 					<li className='menuItem'>About</li>
 					<li className='menuItem'>Blog</li>
 					<li className='menuItem'>FAQ</li>
@@ -33,15 +35,14 @@ const Footer = () => {
 				</div>
 				<div className='socialIcons'>
 					<a
-						href='https://github.com/chandanPradhan09'
-						target='_blank'
+					href='#' target='_blank'
 					>
 						<span className='icon'>
 							<FaGithub />
 						</span>
 					</a>
 					<a
-						href='https://www.linkedin.com/in/chandan09/'
+						href='#'
 						target='_blank'
 					>
 						<span className='icon'>
@@ -49,7 +50,7 @@ const Footer = () => {
 						</span>
 					</a>
 					<a
-						href='https://drive.google.com/file/d/1gYfQMgsdmBNJR1cH7HvQ4R1ZK6bo1AmH/view?usp=sharing'
+						href='#'
 						target='_blank'
 					>
 						<span className='icon'>
